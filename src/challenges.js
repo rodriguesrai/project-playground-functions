@@ -4,13 +4,14 @@ const compareTrue = (parametro1, parametro2) => {
     return true
   } else (parametro1 && parametro2 === false)
     return false
-  }
-
-
-
-
+  };
 
 // Desafio 2 - Crie a função splitSentence
+const splitSentence = string => {
+  return string.split(" ")
+};
+
+
 
 // Desafio 3 - Crie a função concatName
 
