@@ -47,9 +47,21 @@ const calcAllAreas = (base, height, form) => {
 
 
 }
-console.log(calcAllAreas(10, 50, 'triângulo'));
 
 // Desafio 7 - Crie a função catAndMouse
+const catAndMouse = (mouse, cat1, cat2) => {
+  const distanceCat1 = cat1 > mouse ? cat1 - mouse : mouse - cat1;
+  const distanceCat2 = cat2 > mouse ? cat2 - mouse : mouse - cat2;
+  
+  if (distanceCat1 < distanceCat2) {
+    return 'cat1';
+  } else if (distanceCat2 < distanceCat1) {
+    return 'cat2';
+  } else {
+    return 'os gatos trombam e o rato foge';
+  }
+}
+
 
 
 // Desafio 8 - Crie a função fizzBuzz
