@@ -1,25 +1,43 @@
 // Desafio 1 - Crie a função compareTrue
 const compareTrue = (parametro1, parametro2) => {
-  if (parametro1 && parametro2 === true)  {
+  if (parametro1 && parametro2 === true) {
     return true
   } else (parametro1 && parametro2 === false)
-    return false
-  };
+  return false
+};
 
 // Desafio 2 - Crie a função splitSentence
 const splitSentence = string => string.split(" ");
 
 // Desafio 3 - Crie a função concatName
-const concatName = array => `${array[array.length - 1]}, ${array[0]}`
+const concatName = array => `${array[array.length - 1]}, ${array[0]}`;
 
 // Desafio 4 - Crie a função footballPoints
 const footballPoints = (wins, ties) => wins * 3 + ties;
 
 // Desafio 5 - Crie a função highestCount
 
+const highestCount = array1 => {
+  let count = 1;
+  let maiorNumero = array1[0];
+
+  for (let index = 1; index < array1.length; index ++) {
+    if (array1[index] > maiorNumero) {
+      maiorNumero = array1[index];
+      count = 1
+    } else if (array1[index] === maiorNumero) {
+      count ++;
+
+    }
+  }
+ return count;
+}
+console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
 
 // Desafio 7 - Crie a função catAndMouse
+
 
 // Desafio 8 - Crie a função fizzBuzz
 
