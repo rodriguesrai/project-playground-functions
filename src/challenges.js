@@ -6,7 +6,7 @@ const compareTrue = (parametro1, parametro2) => {
     return false
   }
 
-console.log(compareTrue(false, true));
+
 
 
 
