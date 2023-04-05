@@ -21,20 +21,33 @@ const highestCount = array1 => {
   let count = 1;
   let maiorNumero = array1[0];
 
-  for (let index = 1; index < array1.length; index ++) {
+  for (let index = 1; index < array1.length; index++) {
     if (array1[index] > maiorNumero) {
       maiorNumero = array1[index];
       count = 1
     } else if (array1[index] === maiorNumero) {
-      count ++;
+      count++;
 
     }
   }
- return count;
+  return count;
 }
-console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
+
 
 // Desafio 6 - Crie as funções calcTriangleArea, calcRectangleArea e calcAllAreas
+const calcTriangleArea = (base, height) => base * height / 2;
+const calcRectangleArea = (base, height) => base * height;
+const calcAllAreas = (base, height, form) => {
+  if (form === 'triângulo') {
+    return `O valor da área do triângulo é de: ${calcTriangleArea(base, height)}`
+  } else if (form === 'retângulo') {
+    return `O valor da área do retângulo é de: ${calcRectangleArea(base, height)}`
+
+  } else return 'Não foi possível fazer o cálculo, insira uma forma geométrica válida'
+
+
+}
+console.log(calcAllAreas(10, 50, 'triângulo'));
 
 // Desafio 7 - Crie a função catAndMouse
 
@@ -44,6 +57,12 @@ console.log(highestCount([0, 4, 4, 4, 9, 2, 1]));
 // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
+
+
+
+
+
+
 
 // Não modifique essas linhas
 module.exports = {
