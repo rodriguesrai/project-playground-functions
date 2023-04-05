@@ -7,9 +7,7 @@ const compareTrue = (parametro1, parametro2) => {
   };
 
 // Desafio 2 - Crie a função splitSentence
-const splitSentence = string => {
-  return string.split(" ")
-};
+const splitSentence = string => string.split(" ");
 
 
 
