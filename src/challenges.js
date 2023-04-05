@@ -61,10 +61,19 @@ const catAndMouse = (mouse, cat1, cat2) => {
     return 'os gatos trombam e o rato foge';
   }
 }
-
-
-
 // Desafio 8 - Crie a função fizzBuzz
+const fizzBuzz = arrayNumeros => {
+  let stringfizzBuzz = [];
+  for (let index = 0; index < arrayNumeros.length; index ++) { 
+  if {
+
+  } else if () {
+
+  } else if () {
+
+  } else
+}
+}
 
 // Desafio 9 - Crie a função encode e a função decode
 
