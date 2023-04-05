@@ -52,7 +52,7 @@ const calcAllAreas = (base, height, form) => {
 const catAndMouse = (mouse, cat1, cat2) => {
   const distanceCat1 = cat1 > mouse ? cat1 - mouse : mouse - cat1;
   const distanceCat2 = cat2 > mouse ? cat2 - mouse : mouse - cat2;
-  
+
   if (distanceCat1 < distanceCat2) {
     return 'cat1';
   } else if (distanceCat2 < distanceCat1) {
@@ -64,17 +64,21 @@ const catAndMouse = (mouse, cat1, cat2) => {
 // Desafio 8 - Crie a função fizzBuzz
 const fizzBuzz = arrayNumeros => {
   let stringfizzBuzz = [];
-  for (let index = 0; index < arrayNumeros.length; index ++) { 
-  if {
-
-  } else if () {
-
-  } else if () {
-
-  } else
+  for (let index = 0; index < arrayNumeros.length; index++) {
+    
+    if (arrayNumeros[index] % 3 === 0) {
+      stringfizzBuzz.push('fizz');
+    } else if (arrayNumeros[index] % 5 === 0) {
+      stringfizzBuzz.push('buzz');
+    } else if (arrayNumeros[index] % 3 === 0 && arrayNumeros[index] % 5 === 0) {
+      stringfizzBuzz.push('fizzBuzz');
+    } else {
+      stringfizzBuzz.push('bug');
+    }
+    return stringfizzBuzz;
+  }
 }
-}
-
+console.log(fizzBuzz([2, 15, 7, 9, 45]));
 // Desafio 9 - Crie a função encode e a função decode
 
 // Desafio 10 - Crie a função techList
