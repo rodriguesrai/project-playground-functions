@@ -83,15 +83,15 @@ const fizzBuzz = arrayNumeros => {
 
 // Desafio 9 - Crie a função encode e a função decode
 const encode = (string1) => {
-return string1.replace(/['a']/g, 1).replace(/['e']/g, 2).replace(/['i']/g, 3).replace(/['o']/, 4).replace(/['u']/g, 5);
+return string1.replace(/['a']/g, 1).replace(/['e']/g, 2).replace(/['i']/g, 3).replace(/['o']/g, 4).replace(/['u']/g, 5);
 }
 const decode = (string2) => {
-return string2.replace(1, /['a']/g).replace(2, /['e']/g).replace(3, /['i']/g).replace(4, /['o']/g).replace(1, /['u']/g);
+return string2.replace(/1/g, 'a').replace(/2/g, 'e').replace(/3/g, 'i').replace(/4/g, 'o').replace(/5/g, 'u');
 }
-console.log(encode('batatinha frita uuu'));
-console.log(decode('b1t1t3nh1 fr3t1 555'));
-// Desafio 10 - Crie a função techList
 
+// Desafio 10 - Crie a função techList
+console.log(encode('hi there!'));
+console.log(decode('h2ll4'));
 
 
 
