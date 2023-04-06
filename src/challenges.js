@@ -90,8 +90,9 @@ return string2.replace(/1/g, 'a').replace(/2/g, 'e').replace(/3/g, 'i').replace(
 }
 
 // Desafio 10 - Crie a função techList
-console.log(encode('hi there!'));
-console.log(decode('h2ll4'));
+const techList = (array, string) => {
+  let arrayObjetos= []
+}
 
 
 
