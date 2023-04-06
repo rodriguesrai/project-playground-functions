@@ -79,10 +79,17 @@ const fizzBuzz = arrayNumeros => {
   }
   return stringFizzBuzz;
 }
-console.log(fizzBuzz([2, 15, 7, 9, 45]));
+
 
 // Desafio 9 - Crie a função encode e a função decode
-
+const encode = (string1) => {
+return string1.replace(/['a']/g, 1).replace(/['e']/g, 2).replace(/['i']/g, 3).replace(/['o']/, 4).replace(/['u']/g, 5);
+}
+const decode = (string2) => {
+return string2.replace(1, /['a']/g).replace(2, /['e']/g).replace(3, /['i']/g).replace(4, /['o']/g).replace(1, /['u']/g);
+}
+console.log(encode('batatinha frita uuu'));
+console.log(decode('b1t1t3nh1 fr3t1 555'));
 // Desafio 10 - Crie a função techList
 
 
