@@ -105,7 +105,7 @@ const techList = (array, string) => {
   return arrayTech;
   
 }
-console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
+
 
 
 // Não modifique essas linhas
