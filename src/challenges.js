@@ -91,12 +91,21 @@ return string2.replace(/1/g, 'a').replace(/2/g, 'e').replace(/3/g, 'i').replace(
 
 // Desafio 10 - Crie a função techList
 const techList = (array, string) => {
-  let arrayObjetos= []
+  /* if (array || string === []) {
+    const arrayVazio = []
+    return arrayVazio;
+  } */
+  array = array.sort();
+  let arrayTech = [];
+  for (let itens of array) {
+    arrayTech.push({tech: itens, name: string})
+ 
+  }
+ 
+  return arrayTech;
+  
 }
-
-
-
-
+console.log(techList(['React', 'Jest', 'HTML', 'CSS', 'JavaScript'], 'Lucas'));
 
 
 // Não modifique essas linhas
